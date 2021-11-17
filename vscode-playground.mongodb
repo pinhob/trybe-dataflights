@@ -1,6 +1,6 @@
 use ("dataFlights");
 
-db.voos.find({ $and: [ { "empresa.nome": "PASSAREDO", }, { natureza: "Doméstica" } ] }).count();
+db.voos.find({ $and: [ { "empresa.nome": "LATAM AIRLINES BRASIL", }, { natureza: "Doméstica" } ] }).count();
 
 use ("dataFlights");
 db.resumoVoos.insertOne(
@@ -14,3 +14,4 @@ db.resumoVoos.findOne(
   { empresa: "PASSAREDO" },
   { _id: 0, empresa: 1, totalVoosDomesticos: 1  }
 );
+
